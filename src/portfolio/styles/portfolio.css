@@ -1,0 +1,90 @@
+/* General styling */
+* {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.cursive {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header, .footer {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.header .btn, .footer .btn {
+    border: none;
+    color: #343a40;
+    transition: background-color 0.3s ease;
+}
+
+.header .btn:hover, .footer .btn:hover {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.footer .right {
+    text-align: right;
+}
+
+.footer {
+    background-color: #343a40; /* Dark background */
+    color: #f8f9fa; /* Light text */
+    padding: 1rem; /* Reduced padding */
+}
+
+.footer h4, .footer h5 {
+    font-size: 1.25rem; /* Slightly smaller font size */
+}
+
+.footer p {
+    font-size: 0.875rem; /* Smaller font size */
+    margin-bottom: 0.5rem; /* Reduced margin */
+}
+
+.footer .container {
+    max-width: 100%; /* Ensure full width container */
+}
+
+.footer .text-light a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.footer .text-light a:hover {
+    text-decoration: underline;
+}
+
+/* Animation for text and elements */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out;
+}
+
