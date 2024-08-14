@@ -9,7 +9,7 @@ export function PortfolioAbout() {
                 <i className="about-subtitle fade-in-up">I am a React / Angular Developer</i>
                 <div className="row">
                     <div className="col-md-4 text-center fade-in-up">
-                        <img src="pic.jpg" alt="Profile" className="img-fluid rounded-circle mb-4 animate-fade-in-delay-more" />
+                        <img src={`${process.env.PUBLIC_URL}/pic.jpg`} alt="Profile" className="img-fluid rounded-circle mb-4 animate-fade-in-delay-more" />
                     </div>
                     <div className="col-md-8">
                         <p className="about-text animate-slide-in">

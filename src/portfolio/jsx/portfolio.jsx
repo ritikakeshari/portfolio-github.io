@@ -12,7 +12,7 @@ export function Portfolio() {
             <BrowserRouter>
                 <header className="d-flex flex-column flex-md-row justify-content-between align-items-center p-3 bg-dark text-white">
                     <div className="d-flex flex-column align-items-center mb-3 mb-md-0">
-                        <img src="portfolio.jpg" width="120" height="120" className="rounded-circle" alt="Profile" />
+                        <img src={`${process.env.PUBLIC_URL}/portfolio.jpg`} alt="Portfolio" width="120" height="120" className="rounded-circle" alt="Profile" />
                         <h5 className="mt-2 cursive">Ritika Keshari</h5>
                     </div>
                     <div className="text-center mb-3 mb-md-0">
@@ -27,12 +27,11 @@ export function Portfolio() {
                 </header>
                 <section className="bg-secondary text-white p-3" style={{ minHeight: '100vh' }}>
                     <Routes>
-                        <Route path="/" element={<PortfolioHome />} />
+                        <Route path="*" element={<PortfolioHome />} />
                         
                         <Route path="about" element={<PortfolioAbout />} />
                         <Route path="projects" element={<PortfolioProject />} />
                         <Route path="resume" element={<PortfolioResume />} />
-                        <Route path="*" element={<div><h1>Oops!</h1> Unable to find your requested content</div>} />
                     </Routes>
                 </section>
                 <footer className="footer mt-auto py-2 bg-dark text-light">

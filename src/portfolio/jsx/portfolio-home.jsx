@@ -26,7 +26,7 @@ export function PortfolioHome() {
                     </div>
                 </div>
                 <div className="col-lg-5 text-center fade-in-up">
-                    <img src="pic.jpg" alt="profile" className="rounded-4 profile-pic" />
+                    <img src={`${process.env.PUBLIC_URL}/pic.jpg`} alt="Profile" className="rounded-4 profile-pic" />
                 </div>
             </div>
 

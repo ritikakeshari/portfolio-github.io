@@ -11,7 +11,7 @@ export function PortfolioProject() {
             <div className="row mt-5 fade-in-up">
                 <div className="col-md-3 col-sm-6 mb-4">
                     <div className="work">
-                        <img src="weather.jpg" className="img-fluid rounded" alt="Weather Application"/>
+                        <img src={`${process.env.PUBLIC_URL}/weather.jpg`} alt="Weather" className="img-fluid rounded" alt="Weather Application"/>
                         <div className="overlay d-flex flex-column align-items-center justify-content-center text-center text-light p-3">
                             <h3>Weather Application</h3>
                             <a href="https://github.com/ritikakeshari/Weather-App" className="btn btn-outline-light rounded-pill mb-2">
@@ -23,7 +23,7 @@ export function PortfolioProject() {
                 </div>
                 <div className="col-md-3 col-sm-6 mb-4">
                     <div className="work">
-                        <img src="book.jpg" className="img-fluid rounded" alt="Library Management System"/>
+                        <img src={`${process.env.PUBLIC_URL}/book.jpg`} alt="Book"className="img-fluid rounded" alt="Library Management System"/>
                         <div className="overlay d-flex flex-column align-items-center justify-content-center text-center text-light p-3">
                             <h3>Library Management System</h3>
                             <a href="https://github.com/ritikakeshari/Library" className="btn btn-outline-light rounded-pill mb-2">
@@ -35,7 +35,7 @@ export function PortfolioProject() {
                 </div>
                 <div className="col-md-3 col-sm-6 mb-4">
                     <div className="work">
-                        <img src="login.jpg" className="img-fluid rounded" alt="Responsive Login Form"/>
+                        <img src={`${process.env.PUBLIC_URL}/login.jpg`} alt="Login" className="img-fluid rounded" alt="Responsive Login Form"/>
                         <div className="overlay d-flex flex-column align-items-center justify-content-center text-center text-light p-3">
                             <h3>Responsive Login Form</h3>
                             <a href="#" className="btn btn-outline-light rounded-pill mb-2">
@@ -47,7 +47,7 @@ export function PortfolioProject() {
                 </div>
                 <div className="col-md-3 col-sm-6 mb-4">
                     <div className="work">
-                        <img src="task.jpg" className="img-fluid rounded" alt="Task Management Tool"/>
+                        <img src={`${process.env.PUBLIC_URL}/task.jpg`} alt="Task" className="img-fluid rounded" alt="Task Management Tool"/>
                         <div className="overlay d-flex flex-column align-items-center justify-content-center text-center text-light p-3">
                             <h3>Task Management Tool</h3>
                             <a href="#" className="btn btn-outline-light rounded-pill mb-2">
